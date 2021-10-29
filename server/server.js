@@ -17,4 +17,8 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/build/index.html'));
   });
 
+app.post('/send', (req, res) => {
+  console.log(req.body);
+})
+
 app.listen(PORT, () => console.log(`Now listening on localhost: ${PORT}`));
