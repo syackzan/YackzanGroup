@@ -18,8 +18,9 @@ function Contact() {
 
     const sendMail = async (mail) => {
 
+        console.log("hello");
         try {
-            const response = await fetch('send', {
+            const response = await fetch('/send', {
                 method: 'POST',
                 body: JSON.stringify(mail),
                 headers: { 'Content-Type': 'application/json' }
