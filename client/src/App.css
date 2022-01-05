@@ -85,7 +85,7 @@ html, body {
 
 .fixed {
   position: fixed;
-  z-index: 1;
+  z-index: 99;
 }
 
 .upperPadding20 {
@@ -402,6 +402,36 @@ html, body {
   border-radius: 2px;
 }
 
+.positionRE {
+  position: relative;
+}
+
+.positionAB {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: green;
+  color: green;
+}
+
+.positionAB2 {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  right: 50;
+  width: 100%;
+  background-color: green;
+  color: green;
+  font-size: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+
 /* Style Footer to bottom of page */
 .footer {
   margin-top: 25px;
@@ -464,4 +494,12 @@ html, body {
 
 .flexIt:hover {
   background-color: lightgray;
+}
+
+.show:hover + .hide {
+  display: block;
+}
+
+.navLinkTo:hover {
+  color: rgb(122, 110, 110)
 }

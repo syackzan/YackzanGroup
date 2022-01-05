@@ -54,16 +54,17 @@ function Property() {
                                 <div className="row teamHeader">
                                     <div className="col-12 d-flex justify-content-between">
                                         <p className="teamHeader m-0">Residential</p>
-                                        
+
                                     </div>
                                 </div>
                                 <div className="row">
                                     <div className="col-12">
                                         <div className="row">
                                             <div className="col-12">
-                                                <div className="d-flex">
+                                                <div className="d-flex positionRE">
                                                     <Link to="#" onClick={eightWake} className="imageLink d-flex flex-fill">
-                                                        <img className="largePhoto flex-fill" src={castilian4} alt="Photo of Casilian" />
+                                                        <img className="largePhoto flex-fill show" src={castilian4} alt="Photo of Casilian" />
+                                                        <div className="positionAB hide">A</div>
                                                     </Link>
                                                 </div>
                                             </div>
@@ -83,7 +84,10 @@ function Property() {
                                             <div className="spaceBetweenThumbs flex-fill">
                                                 <Link to="#" onClick={aspen} className="imageLink">
                                                     <div className="center">
-                                                        <img src={aspenExterior} alt="Aspen Exterior" className="thumbnails" />
+                                                        <div className="positionRE">
+                                                            <img src={aspenExterior} alt="Aspen Exterior" className="thumbnails show" />
+                                                            <div className="positionAB2 hide">A</div>
+                                                        </div>
                                                     </div>
                                                 </Link>
                                                 <div className="propertyNameThumb center m-0">Aspen Village Apartments</div>
@@ -93,7 +97,10 @@ function Property() {
                                             <div className="spaceBetweenThumbs flex-fill">
                                                 <Link to="#" onClick={gStreet} className="imageLink">
                                                     <div className="center">
-                                                        <img src={gStreetApts} alt="G Street Apts" className="thumbnails" />
+                                                        <div className="positionRE">
+                                                            <img src={gStreetApts} alt="G Street Apts" className="thumbnails show" />
+                                                            <div className="positionAB2 hide">A</div>
+                                                        </div>
                                                     </div>
                                                 </Link>
                                                 <div className="propertyNameThumb center m-0">G Street Apartments</div>
@@ -103,7 +110,10 @@ function Property() {
                                             <div className="spaceBetweenThumbs flex-fill">
                                                 <Link to="#" onClick={glacier} className="imageLink">
                                                     <div className="center">
-                                                        <img src={glacierPointApts} alt="Glacier Point Apts" className="thumbnails" />
+                                                        <div className="positionRE">
+                                                            <img src={glacierPointApts} alt="Glacier Point Apts" className="thumbnails show" />
+                                                            <div className="positionAB2 hide">A</div>
+                                                        </div>
                                                     </div>
                                                 </Link>
                                                 <div className="propertyNameThumb center m-0">Glacier Point Apartments</div>
@@ -137,9 +147,10 @@ function Property() {
                                     <div className="col-12">
                                         <div className="row">
                                             <div className="col-12">
-                                                <div className="d-flex">
+                                                <div className="d-flex positionRE">
                                                     <Link to="#" onClick={fifthGStreet} className="imageLink d-flex flex-fill">
-                                                        <img className="largePhoto flex-fill" src={fifthG} alt="Photo of Casilian" />
+                                                        <img className="largePhoto flex-fill show" src={fifthG} alt="Photo of Casilian" />
+                                                        <div className="positionAB hide">A</div>
                                                     </Link>
                                                 </div>
                                             </div>
@@ -159,7 +170,10 @@ function Property() {
                                             <div className="spaceBetweenThumbs flex-fill">
                                                 <Link to="#" onClick={westDavisMedical} className="imageLink">
                                                     <div className="center">
-                                                        <img src={westMedicalImg} alt="Aspen Exterior" className="thumbnails" />
+                                                        <div className="positionRE">
+                                                            <img src={westMedicalImg} alt="Aspen Exterior" className="thumbnails show" />
+                                                            <div className="positionAB2 hide">A</div>
+                                                        </div>
                                                     </div>
                                                 </Link>
                                                 <div className="propertyNameThumb center m-0">West Davis Medical Building</div>
@@ -169,7 +183,10 @@ function Property() {
                                             <div className="spaceBetweenThumbs flex-fill">
                                                 <Link to="#" onClick={trackSideCenter} className="imageLink">
                                                     <div className="center">
-                                                        <img src={trackSideImg} alt="G Street Apts" className="thumbnails" />
+                                                        <div className="positionRE">
+                                                            <img src={trackSideImg} alt="G Street Apts" className="thumbnails show" />
+                                                            <div className="positionAB2 hide">A</div>
+                                                        </div>
                                                     </div>
                                                 </Link>
                                                 <div className="propertyNameThumb center m-0">Track Side Center</div>
@@ -179,7 +196,10 @@ function Property() {
                                             <div className="spaceBetweenThumbs flex-fill">
                                                 <Link to="#" onClick={aspenCourt} className="imageLink">
                                                     <div className="center">
-                                                        <img src={aspenCourtImg} alt="Glacier Point Apts" className="thumbnails" />
+                                                        <div className="positionRE">
+                                                            <img src={aspenCourtImg} alt="Glacier Point Apts" className="thumbnails show" />
+                                                            <div className="positionAB2 hide">A</div>
+                                                        </div>
                                                     </div>
                                                 </Link>
                                                 <div className="propertyNameThumb center m-0">Aspen Court</div>
