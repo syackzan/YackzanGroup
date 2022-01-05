@@ -15,42 +15,49 @@ function Header({ currentPage, handlePageChange }) {
     const showSideNav = () => setSideNavDisplay('t');
     const closeSideNav = () => setSideNavDisplay('');
 
-    function changeNav (page){
+    function changeNav(page) {
 
         setSideNavDisplay('')
         handlePageChange(page);
-        
+
     }
 
     return (
         <>
             <header className="header">
-                <div className="container navContainer h-100">
-                    <div onClick={() => handlePageChange('')}>
-                        <Link to='/'><img src={ygLogo} alt="YG Logo" /></Link>
-                    </div>
-                    <div className="navlinks webDisplay">
-                        <div className={currentPage === 'aboutus' ? ("active") : ("flexIt")}>
-                            <Link className={currentPage === 'aboutus' ? ("noStyle activeText p-2") : ("m-1 navText noStyle")} to="/aboutus" onClick={() => handlePageChange('aboutus')}>About Us</Link>
+                <div className="container-fluid">
+                    <div className="row">
+                        <div className="col-2">
+                            <div onClick={() => handlePageChange('')}>
+                                <Link to='/'><img src={ygLogo} alt="YG Logo" /></Link>
+                            </div>
                         </div>
-                        <div className={currentPage === 'developments' ? ("active") : ("flexIt")}>
-                            <Link className={currentPage === 'developments' ? ("noStyle activeText p-2") : ("m-1 navText noStyle")} to="/developments" onClick={() => handlePageChange('developments')}>Developments</Link>
+                        <div className="col-8 d-flex justify-content-center">
+                            <div className="navlinks webDisplay">
+                                <div className={currentPage === 'aboutus' ? ("active") : ("flexIt")}>
+                                    <Link className={currentPage === 'aboutus' ? ("noStyle activeText") : ("navText noStyle")} to="/aboutus" onClick={() => handlePageChange('aboutus')}>About Us</Link>
+                                </div>
+                                <div className={currentPage === 'developments' ? ("active") : ("flexIt")}>
+                                    <Link className={currentPage === 'developments' ? ("noStyle activeText") : ("navText noStyle")} to="/developments" onClick={() => handlePageChange('developments')}>Developments</Link>
+                                </div>
+                                <div className={currentPage === 'property' ? ("active") : ("flexIt")}>
+                                    <Link className={currentPage === 'property' ? ("noStyle activeText") : ("navText noStyle")} to="/properties" onClick={() => handlePageChange('property')}>Properties</Link>
+                                </div>
+                                <div className={currentPage === 'contact' ? ("active") : ("flexIt")}>
+                                    <Link className={currentPage === 'contact' ? ("noStyle activeText") : ("navText noStyle")} to="/contact" onClick={() => handlePageChange('contact')}>Contact Us</Link>
+                                </div>
+                            </div>
                         </div>
-                        <div className={currentPage === 'property' ? ("active") : ("flexIt")}>
-                            <Link className={currentPage === 'property' ? ("noStyle activeText p-2") : ("m-1 navText noStyle")} to="/properties" onClick={() => handlePageChange('property')}>Property Management</Link>
+                        <div className="col-2 d-flex justify-content-center align-items-center">
+                            <div className="phoneDisplay">
+                                <Link to="#" onClick={showSideNav} className="navBtnStyle">☰</Link>
+                            </div>
                         </div>
-                        <div className={currentPage === 'contact' ? ("active") : ("flexIt")}>
-                            <Link className={currentPage === 'contact' ? ("noStyle activeText p-2") : ("m-1 navText noStyle")} to="/contact" onClick={() => handlePageChange('contact')}>Contact Us</Link>
-                        </div>
-                    </div>
-                    <div></div>
-                    <div className="phoneDisplay">
-                        <button onClick={showSideNav}>☰</button>
                     </div>
                 </div>
                 <div className={sidenavDisplay ? ("sidenav displayYes") : ("displayNo")}>
                     <div className="d-flex justify-content-end m-1">
-                        <button className="" onClick={closeSideNav}>x</button>
+                        <Link to="#" className="closeNavBtn" onClick={closeSideNav}>x</Link>
                     </div>
                     <ul className="nav nav-tabs display-flex flex-column align-items-center">
                         <li className="sidenav-item">

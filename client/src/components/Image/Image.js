@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 
-import testP1 from '../../assets/images/testP1.PNG';
+import castilian2 from '../../assets/images/pictures/castilian2.jpg';
 import label from '../../assets/images/label.PNG';
 
 
@@ -11,10 +11,9 @@ function Image({ currentPage, executeScroll }) {
 
         if (currentPage === 'aboutus'){
             return (
-                <div className="utop">
+                <div className="utop fixed">
                     <a href="#values" className="noStyle lilNavText">VALUES</a>
                     <a href="#team" className="noStyle lilNavText">TEAM</a>
-                    <a href="#approach" className="noStyle lilNavText">APPROACH</a>
                 </div>
             )
         } else if (currentPage === 'developments'){
@@ -26,7 +25,8 @@ function Image({ currentPage, executeScroll }) {
         } else if (currentPage === 'property'){
             return (
                 <div className="utop">
-                    <p className="lilNavText">PROJECTS</p>
+                    <a href="#residential" className=" noStyle lilNavText">RESIDENTIAL</a>
+                    <a href="#commercial" className="noStyle lilNavText">COMMERCIAL</a>
                 </div>
             )
         } else if (currentPage === 'contact'){
@@ -47,7 +47,7 @@ function Image({ currentPage, executeScroll }) {
             <div className="imageStyle">
                 <div className="full setPos">
                     {renderLilNav()}
-                    <img className="full" src={testP1} alt="#"></img>
+                    <img className="full" src={castilian2} alt="#"></img>
                     <div className="utop2 d-flex justify-content-center">
                         <div className="box">
                            class
