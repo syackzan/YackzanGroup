@@ -19,98 +19,94 @@ function AboutUs({ values }) {
 
     return (
         <>
-            <div className="row">
-                <div className="col-12">
-                    <div className="fullVP" id='values'>
-                        <div className="jumbotron">
-                            <div className="container upperPadding">
-                                <div className="row">
-                                    <div className="col-md-3 sideRightBorder">
-                                        <div className="row">
-                                            <div className="col-12 purposeText">
-                                                <p className="purposeText m-0">Our Purpose:</p>
-                                            </div>
-                                        </div>
-                                        <div className="row">
-                                            <div className="col-12">
-                                                <p className="purposeText m-0">To discover and deliver value better than anyone in any industry</p>
-                                            </div>
+            <div className="fullVP" id="values">
+                <div className="container upperPadding">
+                    <div className="row m-0">
+                        <div className="col-12">
+                            <div className="row">
+                                <div className="col-md-3 sideRightBorder">
+                                    <div className="row">
+                                        <div className="col-12 purposeText">
+                                            <p className="purposeText m-0">Our Purpose:</p>
                                         </div>
                                     </div>
-                                    <div className="col-md-9">
-                                        <div className="row">
-                                            <div>
-                                                <p className="aboutUsHeader">VALUES...</p>
-                                            </div>
-                                        </div>
-                                        <div className="row">
-                                            <div className="col-12">
-                                                <p className="aboutUsText">
-                                                    <span className="textGray">Yackzan Group, Inc.</span> is a property management and land development company founded in 1986 by husband and wife Randy and Lynne Yackzan.
-                                                    Randy and Lynne have worked together for the last 31 years in partnership with others to develop over $100 million dollars worth of single and multi-family residential,
-                                                    commercial, and office projects in Davis, CA. Gregg Herrington is currently president of the company which employs 19 talented and wonderful people.
-                                                </p>
-                                                <p className="aboutUsText">
-                                                    <span className="textGray">Yackzan Group, Inc.</span> manages over 450 multi-family units, including its newest property, 8th and Wake.
-                                                    8th and Wake is comprised of 60 four-bedroom, two-bathroom suite style units that house 240 UC Davis Graduate Students.
-                                                    In addition, Yackzan Group, Inc. manages nearly 200,000 sq. ft. of office and retail space in Davis and Midtown Sacramento and is currently working with the Unger Family towards
-                                                    developing a 260 multifamily unit project  on the river in West Sacramento's Bridge District.
-                                                </p>
-                                            </div>
+                                    <div className="row">
+                                        <div className="col-12">
+                                            <p className="purposeText m-0">To discover and deliver value better than anyone in any industry</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="row upperPadding">
-                                    <div className="col-6">Property Management Content</div>
-                                    <div className="col-6">Property Development Content</div>
+                                <div className="col-md-9">
+                                    <div className="row">
+                                        <div>
+                                            <p className="aboutUsHeader">VALUES...</p>
+                                        </div>
+                                    </div>
+                                    <div className="row">
+                                        <div className="col-12">
+                                            <p className="aboutUsText">
+                                                <span className="textGray">Yackzan Group, Inc.</span> is a property management and land development company founded in 1986 by husband and wife Randy and Lynne Yackzan.
+                                                Randy and Lynne have worked together for the last 31 years in partnership with others to develop over $100 million dollars worth of single and multi-family residential,
+                                                commercial, and office projects in Davis, CA. Gregg Herrington is currently president of the company which employs 19 talented and wonderful people.
+                                            </p>
+                                            <p className="aboutUsText">
+                                                <span className="textGray">Yackzan Group, Inc.</span> manages over 450 multi-family units, including its newest property, 8th and Wake.
+                                                8th and Wake is comprised of 60 four-bedroom, two-bathroom suite style units that house 240 UC Davis Graduate Students.
+                                                In addition, Yackzan Group, Inc. manages nearly 200,000 sq. ft. of office and retail space in Davis and Midtown Sacramento and is currently working with the Unger Family towards
+                                                developing a 260 multifamily unit project  on the river in West Sacramento's Bridge District.
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
+                            </div>
+                            <div className="row upperPadding">
+                                <div className="col-6">Property Management Content</div>
+                                <div className="col-6">Property Development Content</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="row">
-                <div className="col-12">
-                    <div className="fullVP" id="team">
-                        <div className="jumbotron">
-                            <div className="container upperPadding">
-                                <div className="row teamHeader">TEAM</div>
-                                <div className="row bg-teamPhotos">
-                                    <div className="col-12">
-                                        <div className="d-flex flex-wrap">
-                                            <div className="m-4">
-                                                <div>
-                                                    <img className="styleTeamPhotos" src={fakeTeam8} alt='team8' /> 
-                                                </div>
-                                                <div>
-                                                    <div className="nameStyle">SCOTTY YACKZAN</div>
-                                                </div>
-                                                <div>
-                                                    <div className="jobStyle">Web Designer</div>
-                                                </div>
+            <div className="fullVP" id="team">
+                <div className="container">
+                    <div className="row m-0">
+                        <div className="col-12">
+                            <div className="row teamHeader">TEAM</div>
+                            <div className="row bg-teamPhotos">
+                                <div className="col-12">
+                                    <div className="d-flex flex-wrap">
+                                        <div className="m-4">
+                                            <div>
+                                                <img className="styleTeamPhotos" src={fakeTeam8} alt='team8' />
                                             </div>
-                                            <div className="m-4">
-                                                <div>
-                                                    <img className="styleTeamPhotos" src={fakeTeam8} alt='team8' /> 
-                                                </div>
-                                                <div>
-                                                    <div className="nameStyle">SCOTTY YACKZAN</div>
-                                                </div>
-                                                <div>
-                                                    <div className="jobStyle">Web Designer</div>
-                                                </div>
+                                            <div>
+                                                <div className="nameStyle">SCOTTY YACKZAN</div>
                                             </div>
-                                            <div className="m-4">
-                                                <div>
-                                                    <img className="styleTeamPhotos" src={fakeTeam8} alt='team8' /> 
-                                                </div>
-                                                <div>
-                                                    <div className="nameStyle">SCOTTY YACKZAN</div>
-                                                </div>
-                                                <div>
-                                                    <div className="jobStyle">Web Designer</div>
-                                                </div>
-                                            </div> 
+                                            <div>
+                                                <div className="jobStyle">Web Designer</div>
+                                            </div>
+                                        </div>
+                                        <div className="m-4">
+                                            <div>
+                                                <img className="styleTeamPhotos" src={fakeTeam8} alt='team8' />
+                                            </div>
+                                            <div>
+                                                <div className="nameStyle">SCOTTY YACKZAN</div>
+                                            </div>
+                                            <div>
+                                                <div className="jobStyle">Web Designer</div>
+                                            </div>
+                                        </div>
+                                        <div className="m-4">
+                                            <div>
+                                                <img className="styleTeamPhotos" src={fakeTeam8} alt='team8' />
+                                            </div>
+                                            <div>
+                                                <div className="nameStyle">SCOTTY YACKZAN</div>
+                                            </div>
+                                            <div>
+                                                <div className="jobStyle">Web Designer</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

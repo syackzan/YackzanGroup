@@ -39,9 +39,15 @@
 
 /* Styling Nav Bar */
 
+/* * {
+  outline: 1px solid #f00 !important;
+} */
+
 html, body {
   height: 100%;
   width: 100%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /* Setting Header and Image inside it to vh & vw to 100! */
@@ -85,11 +91,6 @@ html, body {
 
 .bg-white {
   color: white;
-}
-
-.fixed {
-  position: fixed;
-  z-index: 12;
 }
 
 .sticky {
@@ -214,15 +215,12 @@ html, body {
 
 .header {
   height: 82px;
-  width: 100%;
-  position: -webkit-sticky;
-  position: sticky;
+  /* width: 100%; */
   top: 0;
 }
 
 .overImage {
   z-index: 5;
-  width: 100% !important;
   height: fit-content;
   background-color: green;
   display: flex;
@@ -231,7 +229,7 @@ html, body {
 }
 
 .imageStyle {
-  width: 100%;
+  width: 100%; 
   height: 80%;
 }
 
@@ -239,20 +237,7 @@ html, body {
   position: relative;
 }
 
-.utop {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: fit-content;
-  padding: 5px 0px;
-  background-color: green;
-  z-index: 9;
-  display: flex;
-  justify-content: center;
-  transition: 1s;
-}
-
-.utop2 {
+.bottomBoxOverlay {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -263,10 +248,32 @@ html, body {
   transition: 1s;
 }
 
+.imageTextOverlay {
+  position: absolute;
+  right: 15%;
+  bottom: 50%;
+  color: white;
+  padding: 4px;
+  font-size: 17px;
+  line-height: 50px;
+  z-index: 9;
+  border-right: 2px solid gold;
+}
+
+.textOverlay {
+  width: fit-content;
+  height: auto;
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px white;
+  border-radius: 0px 2px 2px 0px;
+}
+
 .box {
   background-color: green;
   width: 60%;
   color: green;
+  border-radius: 2px 2px 0px 0px;
 }
 
 .lilNavText {
@@ -520,13 +527,62 @@ html, body {
   }
 }
 
+/* Adjusting Text inside image with various Media Screens */
+
+@media only screen and (max-width: 950px){
+  .textOverlay {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (max-width: 750px){
+  .textOverlay {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 650px){
+  .textOverlay {
+    font-size: 30px;
+  }
+
+  .imageTextOverlay {
+    bottom: 50%;
+    line-height: 40px;
+  }
+}
+
+@media only screen and (max-width: 525px){
+  .textOverlay {
+    font-size: 22px;
+    height: fit-content;
+  }
+
+  .imageTextOverlay {
+    bottom: 50%;
+    line-height: 25px;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  .textOverlay {
+    font-size: 16px;
+  }
+
+  .imageTextOverlay {
+    bottom: 50%;
+    line-height: 20px;
+  }
+}
+
+/* Styling Hover Elements */
 .noStyle:hover {
   color: white;
 }
 
-a:hover {
+/* a:hover {
   font-weight: bold;
-}
+} */
 
 .flexIt:hover {
   background-color: lightgray;

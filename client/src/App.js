@@ -1,18 +1,13 @@
 import './App.css';
 
-import React, { useState, useRef } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import React, { useState } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom'
 
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Image from './components/Image/Image';
 
-import AboutUs from './components/pages/AboutUs';
-import Develop from './components/pages/Develop';
-import Property from './components/pages/Property';
-import Contact from './components/pages/Contact';
-
-
+import Body from './components/pages/Body';
 
 function App() {
 
@@ -26,18 +21,7 @@ function App() {
           <Header currentPage={currentPage} handlePageChange={handlePageChange} />
           <Image currentPage={currentPage}/>
         </div>
-        <Route exact path='/aboutus'>
-          <AboutUs />
-        </Route>
-        <Route exact path='/developments'>
-          <Develop />
-        </Route>
-        <Route exact path='/properties'>
-          <Property />
-        </Route>
-        <Route exact path='/contact'>
-          <Contact />
-        </Route>
+        <Body />
         <Footer />
       </Router>
   );
