@@ -83,9 +83,20 @@ html, body {
   height: 100%;
 }
 
+.bg-white {
+  color: white;
+}
+
 .fixed {
   position: fixed;
-  z-index: 99;
+  z-index: 12;
+}
+
+.sticky {
+  position: sticky;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 25;
 }
 
 .upperPadding20 {
@@ -107,6 +118,14 @@ html, body {
 
 .imageLink {
   text-decoration: none;
+}
+
+.displayNo {
+  display: none;
+}
+
+.displayYes {
+  display: block;
 }
 
 /* Overall Pages & Components Styling */
@@ -161,7 +180,7 @@ html, body {
   height: 100%;  
   width: 100%;  
   position: fixed; 
-  z-index: 900; 
+  z-index: 99; 
   top: 0; 
   right: 0; 
   background-color: forestgreen; 
@@ -190,12 +209,25 @@ html, body {
 
 .stylingImageDiv{
   height: 80%;
-  width: 100%;
-  position: relative;
+  width: 100%; 
 }
 
 .header {
-  height: 80px;
+  height: 82px;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.overImage {
+  z-index: 5;
+  width: 100% !important;
+  height: fit-content;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  transition: 1s;
 }
 
 .imageStyle {
@@ -490,6 +522,10 @@ html, body {
 
 .noStyle:hover {
   color: white;
+}
+
+a:hover {
+  font-weight: bold;
 }
 
 .flexIt:hover {

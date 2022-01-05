@@ -22,11 +22,47 @@ function Header({ currentPage, handlePageChange }) {
 
     }
 
+    const renderLilNav = () => {
+
+        if (currentPage === 'aboutus'){
+            return (
+                <div className="overImage">
+                    <a href="#values" className="noStyle lilNavText">VALUES</a>
+                    <a href="#team" className="noStyle lilNavText">TEAM</a>
+                </div>
+            )
+        } else if (currentPage === 'developments'){
+            return (
+                <div className="overImage">
+                    <a href="PastDevs" className="noStyle lilNavText">DEVELOPMENTS</a>
+                    <a href="FutureDevs" className="noStyle lilNavText">FUTURE</a>
+                </div>
+            )
+        } else if (currentPage === 'property'){
+            return (
+                <div className="overImage">
+                    <a href="#residential" className=" noStyle lilNavText">RESIDENTIAL</a>
+                    <a href="#commercial" className="noStyle lilNavText">COMMERCIAL</a>
+                </div>
+            )
+        } else if (currentPage === 'contact'){
+            return (
+                <div className="overImage">
+                    <a href="#contact" className="noStyle lilNavText">CONTACT</a>
+                </div>
+            )
+        } else {
+            return(
+                <div></div>
+            )
+        }
+    }
+
     return (
         <>
-            <header className="header">
-                <div className="container-fluid">
-                    <div className="row">
+            <header className="header sticky">
+                <div className="container-fluid p-0">
+                    <div className="row m-0 bg-white">
                         <div className="col-2">
                             <div onClick={() => handlePageChange('')}>
                                 <Link to='/'><img src={ygLogo} alt="YG Logo" /></Link>
@@ -53,6 +89,9 @@ function Header({ currentPage, handlePageChange }) {
                                 <Link to="#" onClick={showSideNav} className="navBtnStyle">☰</Link>
                             </div>
                         </div>
+                    </div>
+                    <div className="row">
+                        {renderLilNav()}
                     </div>
                 </div>
                 <div className={sidenavDisplay ? ("sidenav displayYes") : ("displayNo")}>

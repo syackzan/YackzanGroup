@@ -50,7 +50,7 @@ function Property() {
                 <div className="col-12">
                     <div className="" id="residential">
                         <div className="jumbotron">
-                            <div className="container-31 w-container">
+                            <div className="container-31 w-container upperPadding">
                                 <div className="row teamHeader">
                                     <div className="col-12 d-flex justify-content-between">
                                         <p className="teamHeader m-0">Residential</p>
