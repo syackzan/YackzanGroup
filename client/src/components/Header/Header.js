@@ -34,8 +34,8 @@ function Header({ currentPage, handlePageChange }) {
         } else if (currentPage === 'developments') {
             return (
                 <div className="overImage">
+                    <a href="#currentDevs" className="noStyle lilNavText">CURRENT</a>
                     <a href="#pastDevs" className="noStyle lilNavText">PAST</a>
-                    <a href="#futureDevs" className="noStyle lilNavText">FUTURE</a>
                 </div>
             )
         } else if (currentPage === 'property') {
