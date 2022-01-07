@@ -43,6 +43,10 @@
   outline: 1px solid #f00 !important;
 } */
 
+* {
+  box-sizing: border-box;
+}
+
 html, body {
   height: 100%;
   width: 100%;
@@ -75,6 +79,10 @@ html, body {
 }
 
 .sideRightBorder {
+  border-right: 3px solid green;
+}
+
+.devBetweenBorder {
   border-right: 3px solid green;
 }
 
@@ -367,7 +375,8 @@ html, body {
 }
 
 .styleTeamPhotos {
-  max-width: 250px;
+  width: 100%;
+  max-height: 340px;
   border-radius: 2px;
   border: 1px solid black;
 }
@@ -377,13 +386,28 @@ html, body {
   color: green;
   font-weight: bold;
   display: flex;
-  justify-content: center;
 }
 
 .jobStyle {
   font-size: 18px;
   display: flex;
+}
+
+.emotiBox {
+  background-color: lightgray;
+  height: 30px;
+  width: 30px;
+  border-radius: 10px;
+  margin: 3px;
+  color: white;
+  display: flex;
+  align-items: center;
   justify-content: center;
+}
+
+.bg-blue {
+  background-color: blue;
+  font-weight: bold;
 }
 
 /* Properties Styling */
@@ -480,6 +504,7 @@ html, body {
   max-width: 1000px;
   position: relative;
   margin: auto;
+  height: fit-content;
 }
 
 .titleDevs {
@@ -487,9 +512,8 @@ html, body {
   font-weight: bold;
   width: fit-content;
   height:fit-content;
-  background-color: lightgray;
-  border: 1px solid black;
-  border-radius: 10px;
+  border-bottom: 1px solid black;
+  border-radius: 1px;
   padding: 5px;
   box-shadow:rgb(122, 110, 110);
   -moz-box-shadow: 5px 5px 5px #222;
@@ -499,8 +523,18 @@ html, body {
 
 .textAlignment {
   text-align: end;
+  padding-right: 5px;
 }
 
+.devBetweenDisplay {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.paddingRight5 {
+  padding-right: 5;
+}
 .styleCurDevImgsSm {
   max-width: 100%;
   height: 300px;
@@ -629,6 +663,21 @@ html, body {
     flex-direction: column;
     justify-content: center;
     margin-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 991px){
+  .devBetweenDisplay {
+    align-items: center;
+  }
+
+  .textAlignment {
+    text-align: center;
+  }
+
+  .devBetweenBorder {
+    border-right: none;
+    border-bottom: 3px solid green;
   }
 }
 

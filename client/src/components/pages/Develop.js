@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 //Importing Images for Aspen Development
-import castiliantest from '../../assets/images/pictures/castilian4.jpg';
-import westDavisImg from '../../assets/images/pictures/westDavisImg.jpg';
-import westDavisImg2 from '../../assets/images/pictures/westDavisImg2.jpg';
+import aspen1 from '../../assets/images/pictures/aspen/aspen1.jpg';
+import aspen2 from '../../assets/images/pictures/aspen/aspen2.jpg';
+import aspen3 from '../../assets/images/pictures/aspen/aspen3.jpg';
 
 //Importing Images Castilian (8th & Wake Photos)
 import castilian1 from '../../assets/images/pictures/castilian/castilian1.jpg';
@@ -32,7 +32,7 @@ function Develop() {
 
 
 
-    let aspenArray = [westDavisImg, westDavisImg2, castiliantest];
+    let aspenArray = [aspen1, aspen2, aspen3];
     let counter1;
 
     let castilianArray = [castilian1, castilian2, castilian3, castilian4, castilian5]
@@ -158,20 +158,16 @@ function Develop() {
                 {/* RIVERFRONT CONTENT */}
                 <div className="container upperPadding">
                     <div className="row m-0 height80">
-                        <div className="col-md-3 sideRightBorder p-1">
+                        <div className="col-lg-3 devBetweenBorder p-1">
                             <div className="row">
-                                <div className="col-12 d-flex flex-column align-items-end">
-                                    <p className="m-0 teamHeader">{`RIVERFRONT`}</p>
+                                <div className="col-12 devBetweenDisplay">
+                                    <p className="m-0 teamHeader teamAlignment">{`RIVERFRONT`}</p>
                                     <p className="m-0 propertyName">Developed in 1992</p>
                                     <p className="m-0 textAlignment">Information Relating to the extent of the project</p>
-                                    <p className="m-0">????????</p>
-                                    <p className="m-0">???????</p>
-                                    <p className="m-0">???????</p>
-                                    <p>{`${aspenCount}`}</p>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-9 p-2">
+                        <div className="col-lg-9 p-2">
                             <div className="row">
                                 <div className="col-12">
                                     <div className="row">
@@ -206,20 +202,16 @@ function Develop() {
                  {/* OESTE CONTENT */}
                  <div className="container upperPadding">
                     <div className="row m-0 height80">
-                        <div className="col-md-3 sideRightBorder p-1">
+                        <div className="col-lg-3 devBetweenBorder p-1">
                             <div className="row">
-                                <div className="col-12 d-flex flex-column align-items-end">
+                                <div className="col-12 devBetweenDisplay">
                                     <p className="m-0 teamHeader">{`OESTE RANCH`}</p>
                                     <p className="m-0 propertyName">Developed in 1992</p>
                                     <p className="m-0 textAlignment">Information Relating to the extent of the project</p>
-                                    <p className="m-0">????????</p>
-                                    <p className="m-0">???????</p>
-                                    <p className="m-0">???????</p>
-                                    <p>{`${aspenCount}`}</p>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-9 p-2">
+                        <div className="col-lg-9 p-2">
                             <div className="row">
                                 <div className="col-12">
                                     <div className="row">
@@ -252,6 +244,9 @@ function Develop() {
                     </div>
                 </div>
             </div>
+            <br />
+            <br />
+            <br />
             <div className="d-flex justify-content-center upperPadding" id="pastDevs">
                 <p className="titleDevs">Past Developments</p>
             </div>
@@ -259,20 +254,16 @@ function Develop() {
                 {/* Aspen Development Content */}
                 <div className="container">
                     <div className="row m-0 height80">
-                        <div className="col-md-3 sideRightBorder p-1">
+                        <div className="col-lg-3 devBetweenBorder p-1">
                             <div className="row">
-                                <div className="col-12 d-flex flex-column align-items-center">
-                                    <p className="m-0 teamHeader">{`Aspen Neighborhood`}</p>
-                                    <p className="m-0 propertyName">Developed in 1992</p>
-                                    <p className="m-0">Information Relating to the extend of the project</p>
-                                    <p className="m-0">????????</p>
-                                    <p className="m-0">???????</p>
-                                    <p className="m-0">???????</p>
-                                    <p>{`${aspenCount}`}</p>
+                                <div className="col-12 devBetweenDisplay">
+                                    <p className="m-0 teamHeader textAlignment">{`Aspen Neighborhood`}</p>
+                                    <p className="m-0 propertyName textAlignment">Developed in 1992</p>
+                                    <p className="m-0 textAlignment">Information Relating to the extend of the project</p>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-9 p-2">
+                        <div className="col-lg-9 p-2">
                             <div className="row">
                                 <div className="col-12">
                                     <div className="row">
@@ -307,20 +298,21 @@ function Develop() {
                 {/* 8TH & WAKE Development Content */}
                 <div className="container upperPadding">
                     <div className="row m-0 height80">
-                        <div className="col-md-3 sideRightBorder p-1">
+                        <div className="col-lg-3 devBetweenBorder p-1">
                             <div className="row">
-                                <div className="col-12 d-flex flex-column align-items-center">
-                                    <p className="m-0 teamHeader">{`8TH & WAKE`}</p>
-                                    <p className="m-0 propertyName">Developed in 1992</p>
-                                    <p className="m-0">Information Relating to the extend of the project</p>
-                                    <p className="m-0">????????</p>
-                                    <p className="m-0">???????</p>
-                                    <p className="m-0">???????</p>
-                                    <p>{`${aspenCount}`}</p>
+                                <div className="col-12 devBetweenDispaly">
+                                    <p className="m-0 teamHeader textAlignment">{`8TH & WAKE`}</p>
+                                    <p className="m-0 propertyName textAlignment">Developed in 1992</p>
+                                    <p className="textAlignment">
+                                        This new housing community was designed and built for UC Davis Graduate Students. 
+                                        8th and Wake is located one block away from the UC Davis campus! 
+                                        This desirable property offers leases by bedroom and provides all the necessary on-site amenities that are vital for any UC Davis Graduate 
+                                        Student including a study lounge with free Wi-Fi, private meeting rooms, and community computers and printing
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-9 p-2">
+                        <div className="col-lg-9 p-2">
                             <div className="row">
                                 <div className="col-12">
                                     <div className="row">
@@ -355,20 +347,16 @@ function Develop() {
                 {/* 5th & G Development Content */}
                 <div className="container upperPadding">
                     <div className="row m-0 height80">
-                        <div className="col-md-3 sideRightBorder p-1">
+                        <div className="col-lg-3 devBetweenBorder p-1">
                             <div className="row">
-                                <div className="col-12 d-flex flex-column align-items-center">
-                                    <p className="m-0 teamHeader">{`5TH & G PLAZA REDEVELOPMENT`}</p>
-                                    <p className="m-0 propertyName">Developed in 1992</p>
-                                    <p className="m-0">Information Relating to the extend of the project</p>
-                                    <p className="m-0">????????</p>
-                                    <p className="m-0">???????</p>
-                                    <p className="m-0">???????</p>
-                                    <p>{`${aspenCount}`}</p>
+                                <div className="col-12 devBetweenDisplay">
+                                    <p className="m-0 teamHeader textAlignment">{`5TH & G PLAZA REDEVELOPMENT`}</p>
+                                    <p className="m-0 propertyName textAlignment">Developed in 1992</p>
+                                    <p className="m-0 textAlignment">Information Relating to the extend of the project</p>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-9 p-2">
+                        <div className="col-lg-9 p-2">
                             <div className="row">
                                 <div className="col-12">
                                     <div className="row">
@@ -449,7 +437,7 @@ function Develop() {
                 <div className="container upperPadding">
                     <div className="row m-0 teamHeader">{`Aspen Neighborhood`}</div>
                     <div className="row m-0 height80">
-                        <div className="col-md-3 sideRightBorder p-1">
+                        <div className="col-md-3 devBetweenBorder p-1">
                             <div className="row">
                                 <div className="col-12 d-flex flex-column align-items-center">
                                     <p className="m-0 propertyName">Developed in 1992</p>
