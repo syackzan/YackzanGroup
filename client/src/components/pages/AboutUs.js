@@ -76,7 +76,7 @@ function AboutUs({ values }) {
                             <div className="row teamHeader">TEAM</div>
                             <div className="row bg-teamPhotos">
                                 <div className="col-12">
-                                    <div className="d-flex flex-wrap">
+                                    <div className="d-flex flex-wrap justify-content-center">
                                         <div className="m-4">
                                             <div>
                                                 <img className="styleTeamPhotos" src={gregHerrington} alt='team8' />
@@ -128,7 +128,32 @@ function AboutUs({ values }) {
                                             </div>
                                         </div>
                                         <div className="m-4">
-                                        <div>
+                                            <div>
+                                                <img className="styleTeamPhotos" src={fakeTeam8} alt='team8' />
+                                            </div>
+                                            <div className="row">
+                                                <div className="col-12">
+                                                    <div>
+                                                        <div className="nameStyle">SCOTTY YACKZAN</div>
+                                                    </div>
+                                                    <div>
+                                                        <div className="jobStyle">WEB DEVELOPER</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="row">
+                                                <div className="col-12 d-flex">
+                                                    <div className="emotiBox">
+                                                        <p className="m-0 p-1">📧</p>
+                                                    </div>
+                                                    <div className="emotiBox bg-blue">
+                                                        <p className="m-0 p-1">in</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="m-4">
+                                            <div>
                                                 <img className="styleTeamPhotos" src={fakeTeam8} alt='team8' />
                                             </div>
                                             <div className="row">

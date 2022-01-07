@@ -255,11 +255,15 @@ function Develop() {
                 <div className="container">
                     <div className="row m-0 height80">
                         <div className="col-lg-3 devBetweenBorder p-1">
-                            <div className="row">
+                            <div className="row upperPadding">
                                 <div className="col-12 devBetweenDisplay">
                                     <p className="m-0 teamHeader textAlignment">{`Aspen Neighborhood`}</p>
                                     <p className="m-0 propertyName textAlignment">Developed in 1992</p>
-                                    <p className="m-0 textAlignment">Information Relating to the extend of the project</p>
+                                    <p className="m-0 textAlignment">
+                                        The development spanned 110-acres including 317 singl family homes, 346 multi-family units, a 5 acre professional
+                                        administrative office site, an elementary school site, a 30 unit affordable housing senior project, and the first
+                                        co-housing project built in the United States, Muir Commons.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -352,7 +356,10 @@ function Develop() {
                                 <div className="col-12 devBetweenDisplay">
                                     <p className="m-0 teamHeader textAlignment">{`5TH & G PLAZA REDEVELOPMENT`}</p>
                                     <p className="m-0 propertyName textAlignment">Developed in 1992</p>
-                                    <p className="m-0 textAlignment">Information Relating to the extend of the project</p>
+                                    <p className="m-0 textAlignment">
+                                        {`This mixed-used redevelopment project known as 5th & G Plaza in downtown davis boast 430 parking garage spaces, a 5 screen theatre, and 
+                                        15,000 square feet of office and retail/restaurant space. The development also includes 60,000sf of office space dedicted to eleven federal and state agencies and City Of Davis.`}
+                                    </p>
                                 </div>
                             </div>
                         </div>

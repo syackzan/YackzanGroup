@@ -1,9 +1,5 @@
 import React, { useState } from 'react'
 
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
-import Container from 'react-bootstrap/Container';
-
 import ygLogo from '../../assets/images/ygLogo.PNG';
 
 import { Link } from 'react-router-dom';
@@ -11,6 +7,7 @@ import { Link } from 'react-router-dom';
 function Header({ currentPage, handlePageChange }) {
 
     const [sidenavDisplay, setSideNavDisplay] = useState('');
+    const [search, setSearch] = useState('');
 
     const showSideNav = () => setSideNavDisplay('t');
     const closeSideNav = () => setSideNavDisplay('');
@@ -19,6 +16,23 @@ function Header({ currentPage, handlePageChange }) {
 
         setSideNavDisplay('')
         handlePageChange(page);
+        console.log(page);
+
+        if(page === 'aboutus'){
+            setSearch('About Us');
+        }
+
+        if(page === 'developments'){
+            setSearch('Developments')
+        }
+
+        if(page === 'property'){
+            setSearch('Properties')
+        }
+
+        if(page === 'contact'){
+            setSearch('Contact Us')
+        }
 
     }
 
@@ -60,7 +74,7 @@ function Header({ currentPage, handlePageChange }) {
 
     return (
         <>
-            <header className="header container-fluid sticky">
+            <header className="header container-fluid sticky p-0">
                 <div className="row bg-white m-0">
                     <div className="col-2">
                         <div onClick={() => handlePageChange('')}>
@@ -82,6 +96,11 @@ function Header({ currentPage, handlePageChange }) {
                                 <Link className={currentPage === 'contact' ? ("noStyle activeText") : ("navText noStyle")} to="/contact" onClick={() => handlePageChange('contact')}>Contact Us</Link>
                             </div>
                         </div>
+                        <div className="navlinks phoneDisplay">
+                            <div className="active">
+                                <Link className="noStyle activeText" to="#">{search}</Link>
+                            </div>
+                        </div>
                     </div>
                     <div className="col-2 d-flex justify-content-center align-items-center">
                         <div className="phoneDisplay">
@@ -89,7 +108,7 @@ function Header({ currentPage, handlePageChange }) {
                         </div>
                     </div>
                 </div>
-                <div className="row m-0">
+                <div className="row">
                     {renderLilNav()}
                 </div>
                 <div className={sidenavDisplay ? ("sidenav displayYes") : ("displayNo")}>
