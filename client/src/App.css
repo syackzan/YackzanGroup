@@ -75,7 +75,7 @@ html, body {
 }
 
 .sideRightBorder {
-  border-right: 2px solid green;
+  border-right: 3px solid green;
 }
 
 .textGray {
@@ -477,19 +477,28 @@ html, body {
 }
 
 .developImageContainer {
-  width: 100%;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
 
-.developImageContainerSm {
-  width: 100%;
-  height: 300px;
-  /* height: 100%; */
-}
-
-.styleCurDevImgs {
-  max-width: 100%;
+.titleDevs {
+  font-size: 32px;
+  font-weight: bold;
+  width: fit-content;
+  height:fit-content;
+  background-color: lightgray;
   border: 1px solid black;
-  border-radius: 2px;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow:rgb(122, 110, 110);
+  -moz-box-shadow: 5px 5px 5px #222;
+  -webkit-box-shadow: 5px 5px 5px #222;
+  box-shadow: 5px 5px 5px #222;
+}
+
+.textAlignment {
+  text-align: end;
 }
 
 .styleCurDevImgsSm {
@@ -498,8 +507,81 @@ html, body {
   /* height: 100%; */
   border: 1px solid black;
   border-radius: 2px;
+  opacity: 100%;
 }
 
+.developImageContainerSm {
+  width: 100%;
+  height: 300px;
+  /* height: 100%; */
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  z-index: 3;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.styleCurDevImgs {
+  max-width: 100%;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+
+.dotDiv {
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 5px 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.activeDot, .dot:hover {
+  background-color: #717171;
+}
+
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fade {
+  0% {opacity: .4}
+  100% {opacity: 1}
+}
+
+@keyframes fade {
+  0% {opacity: .4}
+  100% {opacity: 1}
+}
 
 /* Style Footer to bottom of page */
 .footer {
@@ -625,3 +707,8 @@ html, body {
 .navLinkTo:hover {
   color: rgb(122, 110, 110)
 }
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
