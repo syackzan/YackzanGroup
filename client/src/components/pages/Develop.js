@@ -38,7 +38,7 @@ function Develop() {
     let castilianArray = [castilian1, castilian2, castilian3, castilian4, castilian5]
     let counter2;
 
-    let fifthGArray =[fifthG1, fifthG2];
+    let fifthGArray = [fifthG1, fifthG2];
     let counter3;
 
     let oesteArray = [];
@@ -172,12 +172,10 @@ function Develop() {
                                 <div className="col-12">
                                     <div className="row">
                                         <div className="col-12">
-                                            <div className="developImageContainer d-flex align-items-center">
+                                            <div className="developImageContainer d-flex align-items-center justify-content-start">
                                                 {castilianArray.map((pic, index) => (
                                                     <div key={index}>
-                                                        {index == castilianCount ? (<>
-                                                            <img src={pic} className="styleCurDevImgs fade" />
-                                                        </>) : (<></>)}
+                                                        <img src={pic} className={index === castilianCount ? ("styleCurDevImgs fade displayYes") : ("displayNo")} />
                                                     </div>
                                                 ))}
                                                 <Link to="#" className="noStyle next" onClick={() => castilianClick(1)}>{`>`}</Link>
@@ -199,8 +197,8 @@ function Develop() {
                         </div>
                     </div>
                 </div>
-                 {/* OESTE CONTENT */}
-                 <div className="container upperPadding">
+                {/* OESTE CONTENT */}
+                <div className="container upperPadding">
                     <div className="row m-0 height80">
                         <div className="col-lg-3 devBetweenBorder p-1">
                             <div className="row">
@@ -219,9 +217,7 @@ function Develop() {
                                             <div className="developImageContainer d-flex align-items-center">
                                                 {castilianArray.map((pic, index) => (
                                                     <div key={index}>
-                                                        {index == castilianCount ? (<>
-                                                            <img src={pic} className="styleCurDevImgs fade" />
-                                                        </>) : (<></>)}
+                                                        <img src={pic} className={index === castilianCount ? ("styleCurDevImgs fade displayYes") : ("displayNo")} />
                                                     </div>
                                                 ))}
                                                 <Link to="#" className="noStyle next" onClick={() => castilianClick(1)}>{`>`}</Link>
@@ -275,9 +271,7 @@ function Develop() {
                                             <div className="developImageContainer d-flex align-items-center">
                                                 {aspenArray.map((pic, index) => (
                                                     <div key={index}>
-                                                        {index == aspenCount ? (<>
-                                                            <img src={pic} className="styleCurDevImgs fade" />
-                                                        </>) : (<></>)}
+                                                        <img src={pic} className={index === aspenCount ? ("styleCurDevImgs fade displayYes") : ("displayNo")} />
                                                     </div>
                                                 ))}
                                                 <Link to="#" className="noStyle next" onClick={() => aspenClick(1)}>{`>`}</Link>
@@ -308,9 +302,9 @@ function Develop() {
                                     <p className="m-0 teamHeader textAlignment">{`8TH & WAKE`}</p>
                                     <p className="m-0 propertyName textAlignment">Developed in 1992</p>
                                     <p className="textAlignment">
-                                        This new housing community was designed and built for UC Davis Graduate Students. 
-                                        8th and Wake is located one block away from the UC Davis campus! 
-                                        This desirable property offers leases by bedroom and provides all the necessary on-site amenities that are vital for any UC Davis Graduate 
+                                        This new housing community was designed and built for UC Davis Graduate Students.
+                                        8th and Wake is located one block away from the UC Davis campus!
+                                        This desirable property offers leases by bedroom and provides all the necessary on-site amenities that are vital for any UC Davis Graduate
                                         Student including a study lounge with free Wi-Fi, private meeting rooms, and community computers and printing
                                     </p>
                                 </div>
@@ -324,9 +318,7 @@ function Develop() {
                                             <div className="developImageContainer d-flex align-items-center">
                                                 {castilianArray.map((pic, index) => (
                                                     <div key={index}>
-                                                        {index == castilianCount ? (<>
-                                                            <img src={pic} className="styleCurDevImgs fade" />
-                                                        </>) : (<></>)}
+                                                        <img src={pic} className={index === castilianCount ? ("styleCurDevImgs fade displayYes") : ("displayNo")} />
                                                     </div>
                                                 ))}
                                                 <Link to="#" className="noStyle next" onClick={() => castilianClick(1)}>{`>`}</Link>
@@ -355,7 +347,7 @@ function Develop() {
                             <div className="row">
                                 <div className="col-12 devBetweenDisplay">
                                     <p className="m-0 teamHeader textAlignment">{`5TH & G PLAZA REDEVELOPMENT`}</p>
-                                    <p className="m-0 propertyName textAlignment">Developed in 1992</p>
+                                    <p className="m-0 propertyName textAlignment">Developed in 1998</p>
                                     <p className="m-0 textAlignment">
                                         {`This mixed-used redevelopment project known as 5th & G Plaza in downtown davis boast 430 parking garage spaces, a 5 screen theatre, and 
                                         15,000 square feet of office and retail/restaurant space. The development also includes 60,000sf of office space dedicted to eleven federal and state agencies and City Of Davis.`}
@@ -371,9 +363,7 @@ function Develop() {
                                             <div className="developImageContainer d-flex align-items-center">
                                                 {fifthGArray.map((pic, index) => (
                                                     <div key={index}>
-                                                        {index == fifthGCount ? (<>
-                                                            <img src={pic} className="styleCurDevImgs fade" />
-                                                        </>) : (<></>)}
+                                                        <img src={pic} className={index === fifthGCount ? ("styleCurDevImgs fade displayYes") : ("displayNo")} />
                                                     </div>
                                                 ))}
                                                 <Link to="#" className="noStyle next" onClick={() => fifthGClick(1)}>{`>`}</Link>

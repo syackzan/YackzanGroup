@@ -18,22 +18,27 @@ function Header({ currentPage, handlePageChange }) {
         handlePageChange(page);
         console.log(page);
 
-        if(page === 'aboutus'){
+        if (page === 'aboutus') {
             setSearch('About Us');
         }
 
-        if(page === 'developments'){
+        if (page === 'developments') {
             setSearch('Developments')
         }
 
-        if(page === 'property'){
+        if (page === 'property') {
             setSearch('Properties')
         }
 
-        if(page === 'contact'){
+        if (page === 'contact') {
             setSearch('Contact Us')
         }
 
+    }
+
+    const homePageSelected = () => {
+        handlePageChange('');
+        setSearch('');
     }
 
     const renderLilNav = () => {
@@ -77,7 +82,7 @@ function Header({ currentPage, handlePageChange }) {
             <header className="header container-fluid sticky p-0">
                 <div className="row bg-white m-0">
                     <div className="col-2">
-                        <div onClick={() => handlePageChange('')}>
+                        <div onClick={() => homePageSelected()}>
                             <Link to='/'><img src={ygLogo} alt="YG Logo" /></Link>
                         </div>
                     </div>
@@ -97,9 +102,11 @@ function Header({ currentPage, handlePageChange }) {
                             </div>
                         </div>
                         <div className="navlinks phoneDisplay">
-                            <div className="active">
-                                <Link className="noStyle activeText" to="#">{search}</Link>
-                            </div>
+                            {search ? (
+                                <div className="active">
+                                    <Link className="noStyle activeText" to="#">{search}</Link>
+                                </div>
+                            ) : (<></>)}
                         </div>
                     </div>
                     <div className="col-2 d-flex justify-content-center align-items-center">
@@ -117,7 +124,7 @@ function Header({ currentPage, handlePageChange }) {
                     </div>
                     <ul className="nav nav-tabs display-flex flex-column align-items-center">
                         <li className="sidenav-item">
-                            <Link className="sidenavStyle" to="#/aboutus" onClick={() => changeNav('aboutus')}>About Us</Link>
+                            <Link className="sidenavStyle" to="/aboutus" onClick={() => changeNav('aboutus')}>About Us</Link>
                         </li>
                         <li className="sidenav-item">
                             <Link className="sidenavStyle" to="/developments" onClick={() => changeNav('developments')}>Developments</Link>
